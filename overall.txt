@@ -1,0 +1,4 @@
+1)The team should contain six members.
+2)The team members should be of same year.
+3)The team members should be of same department.
+4)A team member should not participated in another team.

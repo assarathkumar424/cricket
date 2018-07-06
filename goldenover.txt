@@ -1,0 +1,3 @@
+1)The runs that are scored in the over will be doubled.
+2)Extras that are bowled in the golden over are not get doubled.
+3)The runs scored in the no ball will be doubled not the extra.

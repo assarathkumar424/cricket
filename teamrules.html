@@ -1,0 +1,64 @@
+<html>
+    <head>
+
+        <title>TEAM RULES</title>
+        <style>
+            a{
+                text-decoration: none;
+                float:left;
+                width: 200px;
+                opacity:0.8;
+                height: 50px;
+                display: block;
+                line-height: 40px;
+                text-align: center;
+                padding: 5px 5px;
+            }
+            a:hover{
+                background-color: red;
+                color:white;
+            }
+            div{   
+                color:pink;
+                padding: 20px 20px;
+                margin:200px 100px 100px 250px;
+                font-size: 30px;
+                
+            }
+            div:hover{
+                border-color: black;
+                border-style: double;
+                background-color: green;
+                color:white;
+            }
+        </style>
+        <script>
+            function call(url,d){
+                var x;
+                x= new XMLHttpRequest();
+                x.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    d(this);
+                }
+            };
+            x.open("GET",url,true);
+            x.send();    
+            }
+            function d(x){
+                var str=x.responseText.split(".");
+                var a="";
+                a=str.join("<br>");
+                document.getElementById("rule").innerHTML=a;
+            }
+        </script>
+    </head>
+    <body>
+            <a href="home.html">HOME</a>
+            <a onclick="call('overall.txt',d)">OVERALL</a>
+            <a onclick="call('goldenover.txt',d)">GOLDEN OVER</a>
+            <a onclick="call('batting.txt',d)">BATTING</a>
+            <a onclick="call('bowling.txt',d)">BOWLING</a>
+            <a onclick="call('fielding.txt',d)">FIELDING</a><br><br><br><br>
+        <div id="rule"></div>
+    </body>
+</html>

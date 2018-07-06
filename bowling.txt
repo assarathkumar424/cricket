@@ -1,0 +1,5 @@
+1)Only one bowler in the team will bowl two overs.
+2)Rest all bowlers can bowl only one bowler.
+3)Bowler cannot be changed after the golden over is chosen.
+4)Out will not be given for Leg Before Wicket.
+5)Starting the over without describing  the guard will be considered as No ball.
